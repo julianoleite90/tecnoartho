@@ -15,14 +15,14 @@
     <meta property="og:url" content="https://tecnoartho.com">
     <meta property="og:title" content="Tecnoartho - Saúde e Bem Estar">
     <meta property="og:description" content="Dispositivo inovador para tratamento de dores nos joelhos. Estimulação elétrica, calor profundo e massagem vibratória.">
-    <meta property="og:image" content="https://tecnoartho.com/images/equipamento.png">
+    <meta property="og:image" content="https://tecnoartho.com/images/r1.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://tecnoartho.com">
     <meta property="twitter:title" content="Tecnoartho - Saúde e Bem Estar">
     <meta property="twitter:description" content="Dispositivo inovador para tratamento de dores nos joelhos. Estimulação elétrica, calor profundo e massagem vibratória.">
-    <meta property="twitter:image" content="https://tecnoartho.com/images/equipamento.png">
+    <meta property="twitter:image" content="https://tecnoartho.com/images/r1.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -141,7 +141,7 @@
                 "reviewBody": "Produto de qualidade, recomendo para quem sofre com dores nos joelhos."
             }
         ],
-        "image": "https://tecnoartho.com/images/equipamento.png",
+        "image": "https://tecnoartho.com/images/r1.png",
         "category": "Dispositivos Médicos",
         "gtin": "7891234567890",
         "mpn": "TECNO-001",
@@ -622,7 +622,10 @@
             
             <div class="modal-body">
                 <div class="cep-input-container">
-                    <input type="text" id="cepInput" placeholder="Digite seu CEP" maxlength="9" class="cep-input">
+                    <div class="cep-label-container">
+                        <label for="cepInput" class="cep-label">Digite seu CEP para verificar disponibilidade:</label>
+                        <input type="text" id="cepInput" placeholder="00000-000" maxlength="9" class="cep-input">
+                    </div>
                     <button class="cep-button" onclick="checkAvailability()">VERIFICAR</button>
                 </div>
                 
