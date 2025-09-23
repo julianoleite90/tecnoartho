@@ -132,6 +132,72 @@ function trackConversion(eventName, value) {
     }
 }
 
+// Track quiz events
+function trackQuizEvent(action, step, answer) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'quiz_interaction', {
+            event_category: 'Quiz',
+            event_label: `${action}_${step}`,
+            custom_parameter_1: answer || '',
+            custom_parameter_2: step || '',
+            value: 1
+        });
+    }
+}
+
+// Track quiz step views
+function trackQuizStepView(stepNumber, stepName) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'quiz_step_view', {
+            event_category: 'Quiz Steps',
+            event_label: `Step_${stepNumber}_${stepName}`,
+            custom_parameter_1: stepNumber,
+            custom_parameter_2: stepName,
+            value: 1
+        });
+    }
+}
+
+// Track quiz answer selection
+function trackQuizAnswer(stepNumber, question, answer) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'quiz_answer', {
+            event_category: 'Quiz Answers',
+            event_label: `Step_${stepNumber}_${answer}`,
+            custom_parameter_1: stepNumber,
+            custom_parameter_2: question,
+            custom_parameter_3: answer,
+            value: 1
+        });
+    }
+}
+
+// Track quiz completion
+function trackQuizCompletion(answers, timeSpent) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'quiz_completion', {
+            event_category: 'Quiz Completion',
+            event_label: 'Quiz_Completed',
+            custom_parameter_1: JSON.stringify(answers),
+            custom_parameter_2: timeSpent,
+            value: 1
+        });
+    }
+}
+
+// Track quiz abandonment
+function trackQuizAbandonment(stepAbandoned, answers) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'quiz_abandonment', {
+            event_category: 'Quiz Abandonment',
+            event_label: `Abandoned_Step_${stepAbandoned}`,
+            custom_parameter_1: stepAbandoned,
+            custom_parameter_2: JSON.stringify(answers),
+            value: 1
+        });
+    }
+}
+
 // Initialize tracking for current page
 function initializePageTracking() {
     // Track page view
