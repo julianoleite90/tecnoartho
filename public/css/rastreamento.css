@@ -38,7 +38,7 @@
 .consulta-form {
     padding: var(--spacing-xl);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: var(--spacing-xl);
     align-items: end;
 }
