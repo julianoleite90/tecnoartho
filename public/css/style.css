@@ -188,6 +188,9 @@ body {
     padding: var(--spacing-3xl) 0;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .hero::before {
@@ -208,12 +211,18 @@ body {
     align-items: center;
     position: relative;
     z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .product-showcase {
@@ -275,6 +284,8 @@ body {
     min-width: max-content;
     max-width: 100%;
     overflow-x: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .carousel-item {
@@ -1533,19 +1544,47 @@ body {
     
     .hero-image {
         order: -1;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .product-showcase {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 var(--spacing-sm);
+        box-sizing: border-box;
+    }
+    
+    .hero-main-image {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+    
+    .carousel-container {
+        max-width: 100%;
+        overflow-x: auto;
+        padding: var(--spacing-sm);
+    }
+    
+    .carousel-track {
+        min-width: max-content;
+        max-width: 100%;
+        overflow-x: auto;
     }
     
     .carousel-item {
         flex: 0 0 50px;
         min-width: 50px;
+        max-width: 50px;
     }
     
     .carousel-item img {
         height: 50px;
-    }
-    
-    .carousel-track {
-        min-width: max-content;
+        width: 100%;
+        object-fit: cover;
     }
     
     .hero h1 {
@@ -1730,17 +1769,48 @@ body {
         font-size: var(--font-size-lg);
     }
     
-    .carousel-item {
-        flex: 0 0 40px;
-        min-width: 40px;
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
     }
     
-    .carousel-item img {
-        height: 40px;
+    .product-showcase {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 var(--spacing-xs);
+        box-sizing: border-box;
+    }
+    
+    .hero-main-image {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+    
+    .carousel-container {
+        max-width: 100%;
+        overflow-x: auto;
+        padding: var(--spacing-xs);
     }
     
     .carousel-track {
         min-width: max-content;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    
+    .carousel-item {
+        flex: 0 0 40px;
+        min-width: 40px;
+        max-width: 40px;
+    }
+    
+    .carousel-item img {
+        height: 40px;
+        width: 100%;
+        object-fit: cover;
     }
     
     .solution-section h2 {
