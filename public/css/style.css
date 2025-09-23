@@ -145,8 +145,8 @@ body {
     }
     
     .header-buy-button {
-        padding: var(--spacing-xs) var(--spacing-md);
-        font-size: var(--font-size-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: var(--font-size-xs);
     }
     
     .site-logo {
@@ -160,6 +160,11 @@ body {
     }
     .site-logo {
         height: 36px;
+    }
+    
+    .header-buy-button {
+        padding: var(--spacing-xs) var(--spacing-xs);
+        font-size: 10px;
     }
 }
 
