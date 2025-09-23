@@ -32,6 +32,15 @@ function trackCTAClick(ctaName, location) {
             value: 1
         });
     }
+    
+    // Facebook Pixel CTA tracking
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'ViewContent', {
+            content_name: ctaName,
+            content_category: 'CTA',
+            content_type: location
+        });
+    }
 }
 
 // Track form interactions
@@ -42,6 +51,21 @@ function trackFormEvent(action, formName) {
             event_label: `${action}_${formName}`,
             value: 1
         });
+    }
+    
+    // Facebook Pixel form tracking
+    if (typeof fbq !== 'undefined') {
+        if (action === 'submitted') {
+            fbq('track', 'Lead', {
+                content_name: formName,
+                content_category: 'Form Submission'
+            });
+        } else {
+            fbq('track', 'InitiateCheckout', {
+                content_name: formName,
+                content_category: 'Form Interaction'
+            });
+        }
     }
 }
 
@@ -127,6 +151,14 @@ function trackConversion(eventName, value) {
         gtag('event', 'conversion', {
             event_category: 'Conversion',
             event_label: eventName,
+            value: value || 1
+        });
+    }
+    
+    // Facebook Pixel conversion tracking
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead', {
+            content_name: eventName,
             value: value || 1
         });
     }
