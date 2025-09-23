@@ -145,13 +145,13 @@ body {
     }
     
     .header-buy-button {
-        padding: calc(var(--spacing-lg) * 1.05) calc(var(--spacing-xl) * 1.05);
-        font-size: calc(var(--font-size-lg) * 1.05);
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: var(--font-size-sm);
     }
     
     .site-logo {
         height: 42px;
-        margin-left: 15%;
+        margin-left: 5%;
     }
 }
 
@@ -161,12 +161,12 @@ body {
     }
     .site-logo {
         height: 36px;
-        margin-left: 15%;
+        margin-left: 5%;
     }
     
     .header-buy-button {
-        padding: calc(var(--spacing-md) * 1.05) calc(var(--spacing-lg) * 1.05);
-        font-size: calc(var(--font-size-base) * 1.05);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: var(--font-size-xs);
     }
 }
 
