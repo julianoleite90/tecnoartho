@@ -539,7 +539,6 @@ function closeAvailabilityModal() {
         const cepInput = document.getElementById('cepInput');
         const result = document.getElementById('availabilityResult');
         const loading = document.getElementById('loadingState');
-        const bonusOffer = document.getElementById('bonusOffer');
         const paymentRedirect = document.getElementById('paymentRedirect');
         const modalHeader = document.querySelector('.modal-header');
         const cepContainer = document.querySelector('.cep-input-container');
@@ -547,7 +546,6 @@ function closeAvailabilityModal() {
         if (cepInput) cepInput.value = '';
         if (result) result.style.display = 'none';
         if (loading) loading.style.display = 'none';
-        if (bonusOffer) bonusOffer.style.display = 'none';
         if (paymentRedirect) paymentRedirect.style.display = 'none';
         if (modalHeader) modalHeader.classList.remove('hidden');
         if (cepContainer) cepContainer.classList.remove('hidden');
@@ -632,59 +630,16 @@ function checkAvailability() {
     }, 2000); // 2 segundos de loading
 }
 
-function showBonusOffer() {
+
+
+function showPaymentRedirect() {
     // Esconder o resultado de disponibilidade
     const availabilityResult = document.getElementById('availabilityResult');
     if (availabilityResult) {
         availabilityResult.style.display = 'none';
     }
+    
     trackPopupStep(2, 'opened');
-    
-    // Mostrar a oferta bônus
-    const bonusOffer = document.getElementById('bonusOffer');
-    if (bonusOffer) {
-        bonusOffer.style.display = 'block';
-        startBonusCountdown();
-    }
-}
-
-function startBonusCountdown() {
-    let countdown = 10;
-    
-    const countdownElement = document.getElementById('bonusCountdown1');
-    
-    // Atualizar imediatamente
-    if (countdownElement) countdownElement.textContent = countdown;
-    
-    const countdownInterval = setInterval(() => {
-        // Decrementar contador
-        if (countdown > 0) countdown--;
-        
-        // Adicionar efeito visual de mudança
-        if (countdownElement) {
-            countdownElement.classList.add('changing');
-            countdownElement.textContent = countdown;
-            setTimeout(() => {
-                countdownElement.classList.remove('changing');
-            }, 500);
-        }
-        
-        // Parar quando chegar a 0
-        if (countdown === 0) {
-            clearInterval(countdownInterval);
-            // Opcional: esconder a oferta bônus quando acabar o tempo
-            return;
-        }
-    }, 60000); // Atualizar a cada minuto (60000ms)
-}
-
-function showPaymentRedirect() {
-    // Esconder a oferta bônus
-    const bonusOffer = document.getElementById('bonusOffer');
-    if (bonusOffer) {
-        bonusOffer.style.display = 'none';
-    }
-    trackPopupStep(3, 'opened');
     
     // Mostrar o redirecionamento de pagamento
     const paymentRedirect = document.getElementById('paymentRedirect');
