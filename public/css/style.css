@@ -334,6 +334,15 @@ body {
     text-underline-offset: 4px;
 }
 
+.highlight-yellow {
+    background: linear-gradient(120deg, transparent 0%, #ffd700 20%, #ffd700 80%, transparent 100%);
+    background-size: 100% 0.4em;
+    background-position: 0 0.8em;
+    background-repeat: no-repeat;
+    color: #228B22;
+    font-weight: 600;
+}
+
 .hero-subtitle {
     font-size: var(--font-size-xl);
     color: var(--gray);
@@ -1072,7 +1081,7 @@ body {
     .guarantee-content {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-xl);
+    gap: var(--spacing-xl);
     }
     
     .guarantee-text {
@@ -1560,7 +1569,7 @@ body {
         max-width: 100%;
         width: 100%;
         height: auto;
-        max-height: 300px;
+        max-height: 350px;
     }
     
     .carousel-container {
@@ -1786,7 +1795,7 @@ body {
         max-width: 100%;
         width: 100%;
         height: auto;
-        max-height: 250px;
+        max-height: 300px;
     }
     
     .carousel-container {
