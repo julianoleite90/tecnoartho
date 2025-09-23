@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tecnoartho.com/sitemap.xml
+
+# Informações do produto
+# Nome: Tecnoartho
+# Categoria: Dispositivos Médicos
+# Preço: R$ 979,00
+# Avaliação: 4.8/5 (1.250 avaliações)
+# Garantia: 30 dias
+# Frete: Grátis
