@@ -47,15 +47,410 @@
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <div class="page-content">
-                <h1>Tecnoartho2</h1>
-                <p>Página com apenas header e footer</p>
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="product-showcase">
+                        <div class="main-image-container">
+                            <img id="mainProductImage" src="images/r1.png" alt="Tecnoartho - Imagem Principal" class="hero-main-image">
+                        </div>
+                        
+                        <div class="image-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-track" id="carouselTrack">
+                                    <div class="carousel-item active" data-image="images/r1.png">
+                                        <img src="images/r1.png" alt="Produto 1">
+                                    </div>
+                                    <div class="carousel-item" data-image="images/r2.png">
+                                        <img src="images/r2.png" alt="Produto 2">
+                                    </div>
+                                    <div class="carousel-item" data-image="images/r3.png">
+                                        <img src="images/r3.png" alt="Produto 3">
+                                    </div>
+                                    <div class="carousel-item" data-image="images/r5.png">
+                                        <img src="images/r5.png" alt="Produto 4">
+                                    </div>
+                                    <div class="carousel-item" data-image="images/r6.png">
+                                        <img src="images/r6.png" alt="Produto 5">
+                                    </div>
+                                    <div class="carousel-item" data-image="images/r7.png">
+                                        <img src="images/r7.png" alt="Produto 6">
+                                    </div>
+                                    <div class="carousel-item" data-image="images/r8.png">
+                                        <img src="images/r8.png" alt="Produto 7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-text">
+                    <h1>Acabe com a Dor nos Joelhos<br>e tenha uma <span class="highlight-yellow">vida mais ativa</span></h1>
+                    <p class="hero-subtitle">Tecnologia 4 em 1 para restaurar articulações</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Alívio imediato da dor</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fortalece músculos e ligamentos</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Maior flexibilidade e movimento</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Reduz a inflamação</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ativa a circulação sanguínea</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <button class="cta-button" onclick="scrollToForm()">
+                            <i class="fas fa-arrow-down"></i>
+                            EU QUERO ACABAR COM AS DORES
+                        </button>
+                        <div class="payment-methods-image">
+                            <img src="images/cartoes.webp" alt="Formas de Pagamento" class="payment-cards">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <h2>Você Sofre com Algum Destes Problemas?</h2>
+            <div class="problems-grid">
+                <div class="problems-carousel">
+                <div class="problem-item video-card">
+                    <div class="video-wrapper">
+                        <!-- Vídeo 1 -->
+                        <iframe class="vimeo-embed" src="https://player.vimeo.com/video/1119432686?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-caption">DOR NOS JOELHOS</div>
+                    </div>
+                </div>
+                <div class="problem-item video-card">
+                    <div class="video-wrapper">
+                        <!-- Vídeo 2 -->
+                        <iframe class="vimeo-embed" src="https://player.vimeo.com/video/1119432726?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-caption">DIFICULDADE PARA DORMIR</div>
+                    </div>
+                </div>
+                <div class="problem-item video-card">
+                    <div class="video-wrapper">
+                        <!-- Vídeo 3 -->
+                        <iframe class="vimeo-embed" src="https://player.vimeo.com/video/1119432756?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-caption">POUCA MOBILIDADE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="problem-explainer">
+                <h3 class="problem-subtitle">38% dos brasileiros acima de 50 anos convivem diariamente com dores nos joelhos e articulações</h3>
+                <p>Essas dores limitam movimentos simples como caminhar, subir escadas ou até levantar da cama — tirando a liberdade e a qualidade de vida de milhões de pessoas.</p>
+                <p>A causa principal está no desgaste das articulações (osteoartrite/artrose), na falta de circulação adequada e em processos inflamatórios que vão se acumulando com o tempo.</p>
+            </div>
+            <div class="problem-cta">
+                <button class="cta-button" onclick="scrollToForm()">
+                    <i class="fas fa-arrow-down"></i>
+                    EU QUERO ACABAR COM AS DORES
+                </button>
+                <div class="payment-methods-image">
+                    <img src="images/cartoes.webp" alt="Formas de Pagamento" class="payment-cards">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <h2>A Solução Definitiva para Seus Joelhos</h2>
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h3>Apresentamos o Tecnoartho™</h3>
+                    <p>Descubra o revolucionário dispositivo que transforma o cuidado com seus joelhos, combinando tecnologias avançadas para resultados reais:</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <div>
+                                <h4>Estimulação Elétrica Terapêutica</h4>
+                                <p>Ativa a circulação sanguínea e acelera a regeneração dos tecidos, promovendo alívio rápido e duradouro da dor.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <div>
+                                <h4>Terapia de Calor Profundo</h4>
+                                <p>Relaxa músculos tensos, reduz a inflamação e proporciona uma sensação de conforto imediato.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <div>
+                                <h4>Massagem Vibratória Avançada</h4>
+                                <p>Alivia a tensão muscular, melhora a flexibilidade e devolve a liberdade de movimento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="solution-image">
+                    <div class="device-showcase">
+                        <iframe class="device-video" src="https://player.vimeo.com/video/1120964351?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <img src="images/logo-tecno.png" alt="Marca d'água" class="device-watermark" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-image">
+                    <img src="images/idoso-tecno.png" alt="Tecnoartho - Dispositivo Médico" class="benefits-main-image">
+                </div>
+                <div class="benefits-text">
+                    <h2>Por Que o Tecnoartho™ é a Solução Definitiva para Suas Dores nos Joelhos?</h2>
+                    <div class="benefits-image-mobile">
+                        <img src="images/idoso-tecno.png" alt="Tecnoartho - Dispositivo Médico" class="benefits-main-image">
+                    </div>
+                    <h3>Transforme sua vida com a tecnologia de Tecnoartho™</h3>
+                        <p>Desenvolvido por especialistas e validado por estudos clínicos, o Tecnoartho™ reúne três tecnologias terapêuticas de ponta em um único dispositivo portátil e sem fio. Criado para proporcionar alívio rápido, seguro e duradouro, ele atua diretamente na raiz da dor nos joelhos — sem necessidade de medicamentos e sem riscos de efeitos colaterais. Graças ao seu design wireless, pode ser utilizado em qualquer lugar e a qualquer hora, com total liberdade de movimento.</p>
+                    <div class="benefits-cta">
+                        <button class="cta-button" onclick="scrollToForm()">
+                            <i class="fas fa-shopping-cart"></i>
+                            SIM, QUERO ELIMINAR A DOR AGORA!
+                        </button>
+                        <div class="payment-methods-image">
+                            <img src="images/cartoes.webp" alt="Formas de Pagamento" class="payment-cards">
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Fixed CTA -->
+    <div class="mobile-fixed-cta" id="mobileFixedCTA">
+        <div class="mobile-cta-content">
+            <div class="mobile-cta-text" onclick="openAvailabilityModal(); trackCTAClick('VERIFICAR_DISPONIBILIDADE', 'mobile_fixed');">
+                COMPRAR AGORA <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="mobile-cta-image">
+                <img src="images/equipamento.png" alt="Tecnoartho" class="mobile-product-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>Tecnoartho™ está transformando a vida das pessoas</h2>
+            
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/dep1.png" alt="Maria" class="avatar-image">
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Maria, 54 anos</strong>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/dep2.png" alt="Eliziu" class="avatar-image">
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Eliziu, 56 anos</strong>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/dep3.png" alt="Dirce" class="avatar-image">
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Dirce, 61 anos</strong>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/dep4.png" alt="Teresa" class="avatar-image">
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Teresa, 48 anos</strong>
+            </div>
+        </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/dep5.png" alt="Rafael" class="avatar-image">
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Rafael, 43 anos</strong>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/dep6.png" alt="Rosemary" class="avatar-image">
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Rosemary, 37 anos</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta-form">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-image">
+                    <img src="images/equipamento.png" alt="Tecnoartho - Dispositivo Inovador" class="cta-product-image">
+                </div>
+                <div class="cta-text">
+                    <h2>Garanta Seu Tecnoartho™ Agora!</h2>
+                    <div class="cta-image-mobile">
+                        <img src="images/equipamento.png" alt="Tecnoartho - Dispositivo Inovador" class="cta-product-image">
+                    </div>
+                    
+                    <!-- Microdados para SEO -->
+                    <div itemscope itemtype="https://schema.org/Product" style="display: none;">
+                        <span itemprop="name">Tecnoartho</span>
+                        <span itemprop="description">Dispositivo inovador para tratamento de dores nos joelhos</span>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">979.00</span>
+                            <span itemprop="priceCurrency">BRL</span>
+                            <span itemprop="availability" content="https://schema.org/InStock">Em estoque</span>
+                        </div>
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <span itemprop="ratingValue">4.8</span>
+                            <span itemprop="reviewCount">1250</span>
+                        </div>
+                        <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+                            <span itemprop="name">Tecnoartho</span>
+                        </div>
+                    </div>
+                    <h3>Elimine a Dor nos Joelhos de Forma Definitiva</h3>
+                    <p>Volte a ter mobilidade e liberdade para qualquer movimento, sem sofrer com a dor nos joelhos. Tecnoartho™ é uma tecnologia avançada que combina estimulação elétrica, calor profundo e massagem vibratória para resultados rápidos e duradouros.</p>
+                    
+                    <div class="price-highlight">
+                        <div class="price-box">
+                            <span class="old-price">De R$ 1.499,99</span>
+                            <span class="price-label">Por apenas</span>
+                            <span class="new-price">12x de R$ 98,29</span>
+                            <span class="discount-badge">FRETE GRÁTIS</span>
+                            <span class="pix-price">ou R$ 979,00 à vista no PIX</span>
+                        </div>
+                    </div>
+
+                    <button class="cta-button" onclick="openAvailabilityModal(); trackCTAClick('VERIFICAR_DISPONIBILIDADE', 'main_cta');">
+                        <i class="fas fa-map-marker-alt"></i>
+                        VERIFICAR DISPONIBILIDADE
+                    </button>
+                    
+                    <div class="payment-methods-image">
+                        <img src="images/cartoes.webp" alt="Formas de Pagamento" class="payment-cards">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee-section">
+        <div class="container">
+            <div class="guarantee-content">
+                <div class="guarantee-text">
+                    <h2>Garantia de 180 Dias</h2>
+                    <h3>Proteção completa</h3>
+                    <p>Oferecemos uma garantia de 180 dias contra defeitos ou falhas no Tecnoartho™. Caso ocorra qualquer problema, enviaremos um produto novo totalmente grátis, sem complicações ou burocracias.</p>
+                    <p>Estamos tão confiantes na qualidade e durabilidade do nosso produto que assumimos todo o risco. Você tem 180 dias para usar com tranquilidade e comprovar a excelência do Tecnoartho™.</p>
+                    
+                    <!-- Microdados de Garantia -->
+                    <div itemscope itemtype="https://schema.org/WarrantyPromise" style="display: none;">
+                        <span itemprop="warrantyScope" content="https://schema.org/ComprehensiveWarranty">Garantia Completa</span>
+                        <span itemprop="durationOfWarranty" content="P180D">180 dias</span>
+                    </div>
+                </div>
+                <div class="guarantee-image">
+                    <img src="images/garantia-tecno.png" alt="Garantia Tecnoartho" class="guarantee-main-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-content">
+                <div class="faq-item active">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Como funciona o Tecnoartho™?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O Tecnoartho™ combina três tecnologias terapêuticas: estimulação elétrica para ativar a circulação, calor profundo para relaxar músculos e massagem vibratória para aliviar tensões. Basta colocar o dispositivo no joelho e usar por 15-30 minutos diários.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Quanto tempo leva para ver resultados?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Muitos usuários relatam alívio imediato da dor já na primeira semana de uso. Para resultados mais significativos e duradouros, recomendamos o uso consistente por 180 dias.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>É seguro usar todos os dias?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, o Tecnoartho™ foi desenvolvido para uso diário e é 100% seguro. Não possui efeitos colaterais e pode ser usado por pessoas de todas as idades.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Qual o prazo de entrega?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Entregamos em todo o Brasil em até 25 dias úteis. Para compras via PIX, o envio é feito em até 24 horas após a confirmação do pagamento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Posso devolver se não gostar?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Oferecemos garantia de 180 dias. Se não ficar satisfeito, devolvemos 100% do seu dinheiro, sem perguntas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -98,6 +493,79 @@
         </div>
     </footer>
 
+    <!-- Modal de Disponibilidade -->
+    <div id="availabilityModal" class="modal-overlay">
+        <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>INFORME PARA VERIFICAR DISPONIBILIDADE NA REGIÃO</h3>
+                        <button class="modal-close" onclick="closeAvailabilityModal()">&times;</button>
+                    </div>
+            
+            <div class="modal-body">
+                <div class="cep-input-container">
+                    <div class="cep-label-container">
+                        <label for="cepInput" class="cep-label">Digite seu CEP para verificar disponibilidade:</label>
+                        <input type="text" id="cepInput" placeholder="00000-000" maxlength="9" class="cep-input">
+                    </div>
+                    <button class="cep-button" onclick="checkAvailability()">VERIFICAR</button>
+                </div>
+                
+                <div id="loadingState" class="loading-state" style="display: none;">
+                    <div class="loading-content">
+                        <div class="loading-spinner"></div>
+                        <h4>Consultando disponibilidade...</h4>
+                        <p>Verificando estoque imediato na sua região</p>
+                    </div>
+                </div>
+                
+                <div id="availabilityResult" class="availability-result" style="display: none;">
+                    <div class="availability-success">
+                        <div class="success-icon">✓</div>
+                        <img src="images/equipamento.png" alt="Tecnoartho" class="product-image">
+                        <h4>TEMOS 1 UNIDADE DISPONÍVEL PARA O SEU ENDEREÇO COM ENVIO IMEDIATO</h4>
+                        <div class="address-info">
+                            <p><strong>Endereço encontrado:</strong></p>
+                            <p id="userAddress" class="user-address"></p>
+                        </div>
+                        
+                        <div class="modal-actions">
+                            <button class="modal-cta" onclick="showPaymentRedirect()">CONTINUAR</button>
+                        </div>
+                        
+                        <p class="modal-cancel-text" onclick="closeAvailabilityModal()">Não, obrigado</p>
+                    </div>
+                </div>
+                
+                
+                <div id="paymentRedirect" class="payment-redirect" style="display: none;">
+                    <div class="payment-content">
+                        <div class="payment-header">
+                            <h3>REDIRECIONAMENTO SEGURO</h3>
+                        </div>
+                        
+                        <div class="payment-main">
+                            <div class="security-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            
+                            <div class="payment-text">
+                                <h4>Você está sendo redirecionado para o ambiente seguro de pagamentos</h4>
+                                <p>Seus dados estão protegidos com criptografia de 256 bits</p>
+                            </div>
+                            
+                            <div class="loading-container">
+                                <div class="loading-spinner"></div>
+                                <p class="loading-text">Aguarde...</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
     <script src="js/analytics.js"></script>
     <script src="js/script.js"></script>
 </body>
